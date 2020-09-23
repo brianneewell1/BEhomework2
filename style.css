@@ -3,3 +3,17 @@
 .navbar-nav {
     margin-left: 60%;
 }
+
+body {
+    background-color: lightslategrey;
+}
+
+h1 {
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 35px;
+    color: lightslategrey;
+}
