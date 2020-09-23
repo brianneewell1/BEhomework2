@@ -29,3 +29,8 @@ h1 {
     background-color: lightgray;
     margin-bottom: 0;
 }
+
+.btn-primary{
+    background-color:slategray;
+    border-color: white;
+}
