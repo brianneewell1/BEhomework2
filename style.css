@@ -17,3 +17,15 @@ h1 {
     font-size: 35px;
     color: lightslategrey;
 }
+
+.form-group {
+    margin-right: 50%;
+    border-color: white;
+    margin-left: 2%;
+    background-color: lightgray;
+}
+
+.contactform {
+    background-color: lightgray;
+    margin-bottom: 0;
+}
