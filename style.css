@@ -10,6 +10,8 @@ body {
 
 h1 {
     color: white;
+    padding-left: 35px;
+    text-emphasis: underline;
 }
 
 .navbar-brand {
@@ -40,4 +42,13 @@ h1 {
     margin-right: 50%;
     margin-left: 25px;
     margin-bottom: 25px;
+}
+
+.col-sm-6 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+a{
+    color: darkslategray;
 }
