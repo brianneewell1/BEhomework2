@@ -1,6 +1,5 @@
 var gitHub = document.getElementById("gitHub");
 var linkedIn = document.getElementById("linkedIn");
 
-function gitHub() {
-    onclick="location.href = 'https://github.com/brianneewell1'";
+gitHub.addEventListener("click", function) {"location.href = 'https://github.com/brianneewell1'";
 }
