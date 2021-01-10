@@ -11,8 +11,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <!---Link to stylesheet .css-->
  <link rel="stylesheet" href="style.css">
+ <!--Link to JavaScript-->
+ <script src="script.js"></script>
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+/*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: black;}
@@ -79,18 +81,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">Languages</h3>
     <div class="row">
-      <div class="column">
+      <div class="column1">
         <p>HTML/CSS</p>
       </div>
-      <div class="column">
+      <div class="column1">
         <p>Javascript</p>
         <li>Node</li>
         <li>Express</li>
       </div>
-      <div class="column">
+      <div class="column1">
         <p>SQL</p>
       </div>
-      <div class="column">
+      <div class="column1">
         <p>MongoDB</p>
       </div>
     </div>
@@ -98,28 +100,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div>
     <h3 class="w3-padding-16 w3-text-light-grey">My Strengths</h3>
     <p>Previous coworkers and clients have described me as having these traits</p>
-    <div class="column">
+    <div class="column1">
     <p><i class="fa fa-list fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Organized</p>
     <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Effective Communicator</p>
   </div>
-  <div class="column">
+  <div class="column1">
       <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Personable</p>
       <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Self-Starter</p>
     </div>
-      <div class="column">
+      <div class="column1">
       <p><i class="fa fa-cogs fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Hard Working</p>
       <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Fast-learner</p>
       </div>
-    <div class="column">
+    <div class="column1">
       <p><i class="fa fa-exclamation-triangle fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Work Well Under Stress</p>
       <p><i class="fa fa-handshake-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Reliable</p>
     </div>
     <div class="row:after"></div>
   </div>
   <br>
-      
+      <div style="height: 50px"></div>
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="portfolio">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="portfolio" style="padding-top:10px;padding-bottom:10px">
     <h2 class="w3-text-light-grey">Portfolio</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -131,21 +133,85 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <a href="https://brianneewell1.github.io/Random-Password-Generator/"><img src="./images/password generator.jpg" style="width:100%">Random Password Generator</a>
-        <a href="https://brianneewell1.github.io/Daily-Scheduler-App/"><img src="./images/scheduler.jpg" style="width:100%">Daily Scheduler</a>
-        </div>
-
-      <div class="w3-half">
-        <a href="https://brianneewell1.github.io/Harry-Potter-Quiz/"><img src="./images/quiz.jpg" style="width:100%">Harry Potter Quiz</a>
-        <a href="https://corcollective.wixsite.com/mentoring"><img src="./images/corcollective.jpg" style="width:100%">View Site</a>
-        <a href="https://lostmonkr.github.io/project-1/"><img src="./images/musicsite.jpg" style="width:100%">Random Music Generator</a>
-       </div>
-    <!-- End photo grid -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('people')"> People</button>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    
+   
+  
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -164,6 +230,5 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- END PAGE CONTENT -->
 </div>
-
 </body>
 </html>
