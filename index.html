@@ -1,227 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h-->
+<!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--w3 schools stylesheet-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!---Link to stylesheet .css-->
- <link rel="stylesheet" href="style.css">
- <!--Link to JavaScript-->
- <script src="script.js"></script>
-<style>
-/*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--w3 schools stylesheet-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!---Link to stylesheet .css-->
+  <link rel="stylesheet" href="style.css">
+  <!--Link to JavaScript-->
+  <script src="script.js"></script>
+  <style>
+    /*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: black;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-    <title>Portfolio</title>
+    .w3-sidebar {
+      width: 120px;
+      background: black;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
+  <title>Portfolio</title>
 </head>
-    
+
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
- <!-- Avatar image in top left corner -->
-  <img src="./images/IMG-8948-BW.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PORTFOLIO</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="./images/IMG-8948-BW.png" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PORTFOLIO</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
   </div>
-</div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header>
       <div class="hero-image">
-      <div class="hero-text">
-        <h1>I am Bri Ewell</h1>
-        <p>And I'm a Web Developer</p>
+        <div class="hero-text">
+          <h1>I am Bri Ewell</h1>
+          <p>And I'm a Web Developer</p>
+        </div>
       </div>
-    </div>
-  </header>
-        
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>My name is Brianne Ewell. I recently purchased my first home in Providence, Utah. I live there with my wife, Merissa, and our adorable fur-baby, Casey. 
-        I work for a utility billing company as a billing manager. While running my own business a few years ago, I discovered a passion for graphic and web design. Fast-forward and here I am in a Full-Stack Web Development program through the University of Utah. I enjoy being outdoors, kayaking, hammocking, and camping. I also really enjoy reading and playing games with friends and family. 
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">Languages</h3>
-    <div class="row">
-      <div class="column1">
-        <p>HTML/CSS</p>
-      </div>
-      <div class="column1">
-        <p>Javascript</p>
-        <li>Node</li>
-        <li>Express</li>
-      </div>
-      <div class="column1">
-        <p>SQL</p>
-      </div>
-      <div class="column1">
-        <p>MongoDB</p>
-      </div>
-    </div>
+    </header>
 
-    <div>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Strengths</h3>
-    <p>Previous coworkers and clients have described me as having these traits</p>
-    <div class="column1">
-    <p><i class="fa fa-list fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Organized</p>
-    <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Effective Communicator</p>
-  </div>
-  <div class="column1">
-      <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Personable</p>
-      <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Self-Starter</p>
-    </div>
-      <div class="column1">
-      <p><i class="fa fa-cogs fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Hard Working</p>
-      <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Fast-learner</p>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">About Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>My name is Bri Ewell. I am a full stack developer with expertise in product design, optimizing user experience,
+        and problem-solving. I am proficient in multiple coding languages so I am able to deliver support to both the
+        front and backend of your website. I currently work as a billing manager and oversee utility billing for over
+        150 properties. I work closely with the IT department to beta-test new products and am the main point of contact
+        for properties that have questions about how to use our website.
+        While running my own business a few years ago, I discovered a passion for graphic and web design. I built my own websites and designed all marketing material. That interest led me to enroll in a Full-Stack Web Development Program at the University of Utah, that I will finish next month. 
+       <br>
+       <br>
+        I recently purchased and renovated my first home in Providence, Utah. I live there with my
+        wife, Merissa, and our dog, Casey. I enjoy being outdoors, kayaking, hammocking, and camping. 
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">Languages</h3>
+      <div class="row">
+        <div class="column1">
+          <p>HTML/CSS</p>
+        </div>
+        <div class="column1">
+          <p>Javascript</p>
+          <li>Node</li>
+          <li>Express</li>
+        </div>
+        <div class="column1">
+          <p>SQL</p>
+        </div>
+        <div class="column1">
+          <p>MongoDB</p>
+        </div>
       </div>
-    <div class="column1">
-      <p><i class="fa fa-exclamation-triangle fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Work Well Under Stress</p>
-      <p><i class="fa fa-handshake-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Reliable</p>
-    </div>
-    <div class="row:after"></div>
-  </div>
-  <br>
+
+      <div>
+        <h3 class="w3-padding-16 w3-text-light-grey">My Strengths</h3>
+        <p>Previous coworkers and clients have described me as having these traits</p>
+        <div class="column1">
+          <p><i class="fa fa-list fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Organized</p>
+          <p><i class="fa fa-comments-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Effective Communicator</p>
+        </div>
+        <div class="column1">
+          <p><i class="fa fa-users fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Personable</p>
+          <p><i class="fa fa-certificate fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Self-Starter</p>
+        </div>
+        <div class="column1">
+          <p><i class="fa fa-cogs fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Hard Working</p>
+          <p><i class="fa fa-leanpub fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Fast-learner</p>
+        </div>
+        <div class="column1">
+          <p><i class="fa fa-exclamation-triangle fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Work Well Under
+            Stress</p>
+          <p><i class="fa fa-handshake-o fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Reliable</p>
+        </div>
+        <div class="row:after"></div>
+      </div>
+      <br>
       <div style="height: 50px"></div>
-  <!-- Portfolio Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="portfolio" style="padding-top:10px;padding-bottom:10px">
-    <h2 class="w3-text-light-grey">Portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
+      <!-- Portfolio Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="portfolio"
+        style="padding-top:10px;padding-bottom:10px">
+        <h2 class="w3-text-light-grey">Portfolio</h2>
+        <hr style="width:200px" class="w3-opacity">
 
-    <!--Resume link-->
-   <div style="padding-top:10px;padding-bottom:10px">         
-    <button>
-      <a href="./coding resume (1).pdf"><i class="fa fa-download"></i> Download Resume </a>
-    </button>
-  </div>
+        <!--Resume link-->
+        <div style="padding-top:10px;padding-bottom:10px">
+          <button>
+            <a href="ITresume.pdf"><i class="fa fa-download"></i> Download Resume </a>
+          </button>
+        </div>
 
-    <!-- Grid for photos -->
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('Javascript')"> Javascript</button>
-      <button class="btn" onclick="filterSelection('SQL')"> SQL</button>
-      <button class="btn" onclick="filterSelection('MongoDB')"> MongoDB</button>
-      <button class="btn" onclick="filterSelection('Old Projects')"> Old Projects</button>
-    </div>
-    
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <div class="column SQL">
-        <div class="content">
-          <img src="./images/petcetera.jpg" alt="Pet Info" style="width:100%">
-          <h4><a href="https://petcetera.herokuapp.com/">PetCetera: Pet Info Database</a></h4> 
+        <!-- Grid for photos -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('Javascript')"> Javascript</button>
+          <button class="btn" onclick="filterSelection('SQL')"> SQL</button>
+          <button class="btn" onclick="filterSelection('MongoDB')"> MongoDB</button>
+          <button class="btn" onclick="filterSelection('Old Projects')"> Old Projects</button>
         </div>
-      </div>
-      <div class="column SQL">
-        <div class="content">
-        <img src="./images/blog.jpg" alt="blog" style="width:100%">
-        <h4><a href="https://blog-app2020.herokuapp.com/">Collaborative Blog</a></h4> 
-                  </div>
-      </div>
-      <div class="column Javascript">
-        <div class="content">
-          <img src="./images/password generator.jpg" alt="Password Generator" style="width:100%">
-        <h4><a href="https://brianneewell1.github.io/Random-Password-Generator/">Password Generator</a></h4>
-        </div>
-      </div>
-      <div class="column Javascript">
-        <div class="content">
-          <img src="./images/team.jpg" alt="Team Generator" style="width:100%">
-        <h4><a href="https://drive.google.com/file/d/1r6JjslhJsbXNIVrKLhPauuSueDvpUB3k/view">Team Profile Generator</a></h4>
-        </div>
-      </div>
-      <div class="column Javascript">
-        <div class="content">
-        <img src="./images/quiz.jpg" alt="Quiz" style="width:100%">
-        <h4><a href="https://brianneewell1.github.io/Harry-Potter-Quiz/">Timed Quiz</a></h4>
-                  </div>
-      </div>
-      <div class="column Javascript">
-        <div class="content">
-        <img src="./images/scheduler.jpg" alt="Scheduler" style="width:100%">
-        <h4><a href="https://brianneewell1.github.io/Daily-Scheduler-App/">Daily Scheduler</a></h4>        
-        </div>
-      </div>
-      <div class="column Old Projects">
-        <div class="content">
-        <img src="./images/corcollective.jpg" alt="CorCollective" style="width:100%">
-        <h4><a href="https://corcollective.wixsite.com/mentoring">Cor Collective Business Site</a></h4>
-        </div>
-      </div>
-    <div class="column Javascript">
-        <div class="content">
-          <img src="./images/boozebyme.jpg" alt="Drink Search" style="width:100%">
-          <h4><a href="https://drive.google.com/file/d/1TE7yEzcxkuFdEz3jwNbggInkVumDztzn/view">Booze By Me Search</a></h4>
-        </div>
-      </div>
-      <div class="column SQL">
-        <div class="content">
-        <img src="./images/employeeinfo.jpg" alt="EmployeeInfo" style="width:100%">
-        <h4><a href="https://drive.google.com/file/d/1_nZ7UJ4WiywUDkmnm6zs7qR0QCBMiS6I/view">Employee Info Management</a></h4>
-        </div>
-      </div>
-      <div class="column Javascript">
-        <div class="content">
-        <img src="./images/readme.jpg" alt="readme" style="width:100%">
-        <h4><a href="https://drive.google.com/file/d/16dYB_R0HdIxmK3qywoTjXCWr8KzCHv1w/view">ReadMe Generator</a></h4>
-        </div>
-      </div>
-    
-    <!-- Portfolio Gallery Grid -->
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column SQL">
+            <div class="content">
+              <img src="./images/petcetera.jpg" alt="Pet Info" style="width:100%">
+              <h4><a href="https://petcetera.herokuapp.com/">PetCetera: Pet Info Database</a></h4>
+            </div>
+          </div>
+          <div class="column SQL">
+            <div class="content">
+              <img src="./images/blog.jpg" alt="blog" style="width:100%">
+              <h4><a href="https://blog-app2020.herokuapp.com/">Collaborative Blog</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/password generator.jpg" alt="Password Generator" style="width:100%">
+              <h4><a href="https://brianneewell1.github.io/Random-Password-Generator/">Password Generator</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/team.jpg" alt="Team Generator" style="width:100%">
+              <h4><a href="https://drive.google.com/file/d/1r6JjslhJsbXNIVrKLhPauuSueDvpUB3k/view">Team Profile
+                  Generator</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/quiz.jpg" alt="Quiz" style="width:100%">
+              <h4><a href="https://brianneewell1.github.io/Harry-Potter-Quiz/">Timed Quiz</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/scheduler.jpg" alt="Scheduler" style="width:100%">
+              <h4><a href="https://brianneewell1.github.io/Daily-Scheduler-App/">Daily Scheduler</a></h4>
+            </div>
+          </div>
+          <div class="column Old Projects">
+            <div class="content">
+              <img src="./images/corcollective.jpg" alt="CorCollective" style="width:100%">
+              <h4><a href="https://corcollective.wixsite.com/mentoring">Cor Collective Business Site</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/boozebyme.jpg" alt="Drink Search" style="width:100%">
+              <h4><a href="https://drive.google.com/file/d/1TE7yEzcxkuFdEz3jwNbggInkVumDztzn/view">Booze By Me
+                  Search</a></h4>
+            </div>
+          </div>
+          <div class="column SQL">
+            <div class="content">
+              <img src="./images/employeeinfo.jpg" alt="EmployeeInfo" style="width:100%">
+              <h4><a href="https://drive.google.com/file/d/1_nZ7UJ4WiywUDkmnm6zs7qR0QCBMiS6I/view">Employee Info
+                  Management</a></h4>
+            </div>
+          </div>
+          <div class="column Javascript">
+            <div class="content">
+              <img src="./images/readme.jpg" alt="readme" style="width:100%">
+              <h4><a href="https://drive.google.com/file/d/16dYB_R0HdIxmK3qywoTjXCWr8KzCHv1w/view">ReadMe Generator</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Gallery Grid -->
+        <div style="height:25px"></div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Utah, US</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: brianne.ewell1@gmail.com</p>
-      <p><a href="https://github.com/brianneewell1" class="fa fa-github w3-text-white w3-xxlarge w3-margin-right"> </a> GitHub</p>
-      <p><a href="https://www.linkedin.com/in/brianne-ewell-079470133/" class="fa fa-linkedin w3-text-white w3-xxlarge w3-margin-right"> </a> LinkedIn</p>
-    </div><br>
-    
-  <!-- End Contact Section -->
-  </div>
-  
-  <!-- END PAGE CONTENT -->
-</div>
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+          <h2 class="w3-text-light-grey">Contact Me</h2>
+          <hr style="width:200px" class="w3-opacity">
+
+          <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Utah, US</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+              brianne.ewell1@gmail.com</p>
+            <p><a href="https://github.com/brianneewell1" class="fa fa-github w3-text-white w3-xxlarge w3-margin-right">
+              </a> GitHub</p>
+            <p><a href="https://www.linkedin.com/in/brianne-ewell-079470133/"
+                class="fa fa-linkedin w3-text-white w3-xxlarge w3-margin-right"> </a> LinkedIn</p>
+          </div><br>
+
+          <!-- End Contact Section -->
+        </div>
+
+        <!-- END PAGE CONTENT -->
+      </div>
 </body>
+
 </html>
